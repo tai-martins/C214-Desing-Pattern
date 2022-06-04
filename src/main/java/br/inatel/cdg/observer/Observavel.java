@@ -51,11 +51,12 @@ public class Observavel implements iObservavel{
     }
 
     public void setNovaFrase(String frase){
+        System.out.println("Nova Frase: " );
         this.frase = frase;
+        System.out.println(frase);
         novasMedidas();
+        System.out.println("Quantidade de Palavras: " + contaPalavras());
     }
-
-
 
     public List<Observador> getObservadores() {
         return observadores;

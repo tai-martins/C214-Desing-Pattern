@@ -3,6 +3,8 @@ import br.inatel.cdg.observer.Observavel;
 
 import org.junit.Test;
 import org.junit.Before;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class Teste {
@@ -16,8 +18,11 @@ public class Teste {
     }
 
     @Test
-    public void testeRemoveObservador(){
-
+    public void testeContaPalavras(){
+        Observavel frase = new Observavel();
+        Observador obs5 = new Observador(5);
+        frase.setNovaFrase("Valeu pelo semestre Chris");
+        assertEquals(frase.contaPalavras(),4);
     }
 
 }
