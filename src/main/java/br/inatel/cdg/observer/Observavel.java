@@ -36,13 +36,6 @@ public class Observavel implements iObservavel{
         notificaObservadores();
     }
 
-    public int qtdpalavras() {
-        String myString = this.frase;
-        StringTokenizer stringTokenizer1 = new StringTokenizer(myString);
-        int cont  = stringTokenizer1.countTokens();
-        return Integer.valueOf(cont);
-    }
-
     public String[] separaFrase() {
         String myStr = this.frase;
         String[] palavras = myStr.split(" ");
