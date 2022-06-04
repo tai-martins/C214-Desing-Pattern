@@ -15,11 +15,16 @@ public class Frase {
         frase.registraObservador(obs2);
         frase.registraObservador(obs3);
 
+        frase.setNovaFrase("Engenharia de Computação");
+        frase.contaPalavras();
+
         System.out.println("Notificando os observadores");
         frase.notificaObservadores();
 
         frase.removeObservador(obs2);
-    }
 
+
+
+    }
 
 }

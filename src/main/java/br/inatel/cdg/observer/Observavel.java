@@ -43,11 +43,26 @@ public class Observavel implements iObservavel{
         return Integer.valueOf(cont);
     }
 
-    public String[] separando() {
+    public String[] separaFrase() {
         String myStr = this.frase;
         String[] palavras = myStr.split(" ");
         return palavras;
     }
+
+    public int contaPalavras(){
+        String conta = this.frase;
+        StringTokenizer sT = new StringTokenizer(conta);
+        int tokensCount  = sT.countTokens();
+        return Integer.valueOf(tokensCount);
+
+    }
+
+    public void setNovaFrase(String frase){
+        this.frase = frase;
+        novasMedidas();
+    }
+
+
 
     public List<Observador> getObservadores() {
         return observadores;
