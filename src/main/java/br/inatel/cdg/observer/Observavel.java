@@ -50,6 +50,13 @@ public class Observavel implements iObservavel{
 
     }
 
+    public int contaPares(){
+        String contaPar = this.frase;
+        StringTokenizer sT1 = new StringTokenizer(contaPar);
+        int tokensCount = sT1.countTokens();
+        return Integer
+    }
+
     public void setNovaFrase(String frase){
         System.out.println("Nova Frase: " );
         this.frase = frase;
